@@ -1,0 +1,1829 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; }
+
+/*=================== fonts ====================*/
+@font-face {
+  font-family: Adieu; 
+  src: url(../fonts/Adieu-Regular.otf); 
+ }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap
+}
+ .container {
+  max-width: 1240px;
+  margin: auto
+ }
+
+ main {
+  margin: auto;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Adieu', Arial, sans-serif;
+ }
+
+ .btn:hover {
+  background-color: #e63c00;
+ }
+
+/*=================== START section header ====================*/
+
+.header {
+  background: #09544F;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 8px;
+}
+
+.header__buttons {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.btn-green:hover {
+  background-color: #00ff47;
+}
+
+.header__logo {
+  padding: 0px 8px;
+}
+
+.header__logo img {
+  width: 255px;
+  height: 56px;
+}
+
+.header__lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 23px;
+}
+
+.header__lang img {
+  margin-right: 5px;
+}
+
+.header__lang svg {
+  cursor: pointer;
+}
+
+.header__button {
+  display: block;
+  padding: 8px 16px;
+  background: #00BE40;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1247px) {
+
+ .header-container {
+   padding: 8px 0px;
+   justify-content: flex-start;
+ }
+
+ .header__buttons {
+   flex-grow: 1;
+   justify-content: space-between;
+   padding: 0px 8px 0px 4px;
+ }
+
+ .header__logo img {
+   width: 40px;
+   height: 40px;
+ }
+
+ .header__lang {
+   margin: 0px;
+ }
+
+ .header__burger {
+   display: block;
+   margin-left: 16px;
+   cursor: pointer;
+ }
+
+ .header__nav {
+   display: flex;
+   align-items: flex-start;
+ }
+}
+
+@media (max-width: 767px) {
+  
+  .header__burger {
+    display: none;
+  }
+}
+
+/*=================== END section header ====================*/
+ 
+/*=================== START section leicester-promo ====================*/
+
+.leicester-promo {
+  background: #09544F;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #fff;
+  padding: 0;  
+  min-height: 569px;
+  margin-top: -18px;
+ }
+ 
+ .leicester-promo-container {
+  padding: 0 10px;
+ }
+
+ .leicester-promo__content {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;  
+ }
+
+ .leicester-promo__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+ .leicester-promo__image img {
+  display: block;
+}
+
+ .leicester-promo__text {
+  width: 600px;
+  position: relative;
+  margin-top: 103px;
+  z-index: 1;
+ }
+
+ .leicester-promo__text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 84px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+ }
+
+ .leicester-promo__text p {
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;    
+  color: #FFFFFF;
+  margin-top: 24px;
+ }
+
+ .leicester-promo__btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #F34300;
+  border-radius: 12px;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 288px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+ }
+
+ @media (max-width: 1440px) {
+  .leicester-promo {
+    min-height: auto;
+  }
+  .leicester-promo__image {
+    right: -50px;
+  }
+ }
+ 
+ @media (max-width: 1247px) {  
+  .leicester-promo {
+    margin-top: 0;
+  }
+
+  .leicester-promo__image {
+    right: 0px;
+  }
+
+  .leicester-promo__text  {
+    padding: 0 24px;
+    margin-top: 29px;
+  }
+
+  .leicester-promo__text h1 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .leicester-promo__text p {
+    margin-top: 16px;
+  }  
+
+  .leicester-promo__btn {
+    margin-top: 24px;
+    margin-bottom: 140px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+ }
+
+ @media (max-width: 767px) {
+  .leicester-promo__image {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  .leicester-promo__image img {
+    width: 100%;
+    margin-bottom: -7px;
+  }
+
+  .leicester-promo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .leicester-promo-container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .leicester-promo__text {
+    margin: 0 auto;
+    padding: 0 16px; 
+    text-align: center;
+    width: 100%;
+  }
+
+  .leicester-promo__text p {
+    margin-top: 7px;
+  }
+
+  .leicester-promo__text h1 {
+    margin-top: 16px;
+  }
+
+  .leicester-promo {
+    background-image: none;
+  } 
+
+  .leicester-promo__btn {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+
+  /*=================== END section leicester-promo ====================*/
+
+  /*=================== START section online-broker ====================*/
+
+   .online-broker {
+    padding: 160px 0px 90px;
+   }
+  
+   .online-broker__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 10px;
+   }
+  
+   .online-broker__decor {
+    display: block;
+    width: 600px;
+    position: absolute;
+    left: 6px;
+    top: -8px;
+   }
+  
+   .online-broker__img {
+    width: 100%;
+    height: auto;
+   }
+  
+   .online-broker__title {
+    width: 600px;
+   }
+  
+   .online-broker__title h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+    color: #09544F;
+    margin-bottom: 32px;
+   }
+  
+   .online-broker__title p {
+    font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #09544F;
+    margin-bottom: 32px;
+   }
+  
+   .online-broker__text {
+    width: 600px;
+    text-align: left;
+   }
+  
+   .online-broker__text li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #09544F;
+   }
+  
+   .online-broker__text li:last-child {
+    margin-bottom: 40px;
+   }
+  
+   .online-broker__icon {
+    width: 64px;
+    margin-right: 8px;
+   }
+  
+   .online-broker__btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #F34300;
+    border-radius: 12px;
+    font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+   }
+  
+   @media (max-width: 1248px) {
+      .online-broker {
+        padding: 126px 0px 64px;
+      }  
+    
+      .container {
+        max-width: 100%;
+      }
+  
+      .online-broker__content {
+        padding: 0 32px;
+      }
+  
+      .online-broker__title {
+        width: 100%;
+      }
+  
+      .online-broker__title h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 13px;
+      }
+  
+      .online-broker__title p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 48px;
+      }
+  
+      .online-broker__text {
+        width: 100%;
+        text-align: center;
+      }
+  
+      .online-broker__decor {
+        position: relative;
+        width: 83%;
+        padding: 0 53px;
+        margin-bottom: -96px;
+      }
+  
+      .online-broker__content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+      }
+  
+      .online-broker__text li {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0px;
+      }
+  
+      .online-broker__text li:last-child {
+        margin-bottom: 48px;
+      }
+  
+      .online-broker__btn {
+        display: inline-block;
+        padding: 12px 62px;
+        background: #F34300;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+   }
+  
+   @media (max-width: 767px) {
+    .online-broker {
+      padding: 80px 0px 40px;
+    }  
+  
+    .online-broker__content {
+      padding: 0 15px;
+    }
+  
+    .online-broker__title h2 {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+  
+    .online-broker__title p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 48px;
+    }
+  
+    .online-broker__decor {
+      position: relative;
+      width: 100%;
+      padding: 0px 0px;
+      margin-bottom: -29px;
+      left: 0px;
+      top: -24px;
+    }
+  
+    .online-broker__world {
+      height: 49px;
+      width: 49px;
+    }
+  
+    .online-broker__content {
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+    }
+  
+    .online-broker__text li {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 0px;
+    }
+  
+    .online-broker__icon {
+      width: 64px;
+      margin-right: 0px;
+     }
+    
+    .online-broker__text li:last-child {
+      margin-bottom: 32px;
+    }
+  
+    .online-broker__btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+    } 
+  }
+
+ /*=================== END section online-broker ====================*/
+
+ /*=================== START section leicester-city ====================*/
+
+ .leicester-city {
+  padding: 80px 0px 80px;
+}
+
+ .leicester-city__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 6px;
+ }
+
+ .leicester-city__decor {
+  display: block;
+  width: 600px;
+  position: absolute;
+  right: 10px;
+  top: -4px;
+ }
+
+ .leicester-city__decor img {
+  width: 100%;
+  height: auto;
+ }
+
+ .leicester-city__title {
+  width: 600px;
+ }
+
+ .leicester-city__title h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  color: #09544F;
+  margin-bottom: 32px;
+ }
+
+ .leicester-city__title p {
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #09544F;
+  margin-bottom: 32px;
+ }
+
+ .leicester-city__text {
+  width: 600px;
+  text-align: left;
+ }
+
+ .leicester-city__text li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #09544F;
+ }
+
+ .leicester-city__icon {
+  width: 64px;
+  margin-right: 8px;
+ }
+
+
+ @media (max-width: 1248px) {
+  .leicester-city {
+    padding: 64px 0px 50px;
+  }  
+
+  .leicester-city__content {
+    padding: 0 32px;
+  }
+
+  .leicester-city__title {
+    width: 100%;
+  }
+
+  .leicester-city__title h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .leicester-city__title p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 48px;
+  }
+
+  .leicester-city__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leicester-city__decor {
+    position: relative;
+    margin: 0 auto 32px;
+    width: 70%;
+    top: 0px;
+    right: 0px;
+    padding: 0px 0px;
+  }
+
+  .leicester-city__content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .leicester-city__text li {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .leicester-city {
+    padding: 40px 0px 0;
+  }  
+
+  .container {
+    max-width: 100%;
+  }
+
+  .leicester-city__content {
+    padding: 0 15px;
+  }
+
+  .leicester-city__title {
+    width: 100%;
+  }
+
+  .leicester-city__title h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .leicester-city__title p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 31px;
+  }
+
+  .leicester-city__text {
+    width: 100%;
+  }
+
+  .leicester-city__decor {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    padding: 0px 0px;
+  }
+
+  .leicester-city__content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .leicester-city__text li {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+
+  .leicester-city__icon {
+    width: 64px;
+    margin-right: 0px;
+   }
+}
+
+/*=================== END section leicester-city ====================*/
+
+/*=================== START section join-fbs ====================*/
+
+.join-fbs {
+  padding: 85px 0px 0px;
+}
+
+.join-fbs__container {
+  max-width: 1555px;
+  margin: 0px auto;
+}
+
+.join-fbs__inner {
+  position: relative;
+  max-width: 1440px;
+  margin-right: auto;
+  background: #09544F;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.join-fbs__content {
+  padding: 66px 0px 0px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-fbs__main {
+  margin: 0px 0px 94px;
+  max-width: 808px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-fbs__heading {
+  margin-bottom: 16px;
+  font-family: 'Adieu';
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.join-fbs__motivation {
+  margin-bottom: 32px;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.join-fbs__btn {
+  padding: 12px 123px;
+  min-width: 288px;
+  background: #F34300;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.join-fbs__btn:hover {
+  opacity: 0.8;
+}
+
+.join-fbs__decor {
+  position: absolute;
+  z-index: 1;
+}
+
+.join-fbs__decor-1 {
+  bottom: 0;
+  right: 0;
+  width: 684px;
+  height: 72px;
+}
+
+.join-fbs__decor-2 {
+  top: 0;
+  left: 0;
+  width: 394px;
+  height: 188px;
+}
+
+.join-fbs__pic {
+  text-align: center;
+  position: relative;
+}
+
+.join-fbs__field {
+  width: 778px;
+  height: 320px;
+}
+
+.join-fbs__dots {
+    display: block;
+    position: absolute;
+    width: 587px;
+    top: 19px;
+    left: 96px;
+}
+
+.join-fbs__arrow {
+  position: absolute;
+  top: 31px;
+  left: 188px;
+  z-index: 1;
+  width: 419px;
+  height: 169px;
+}
+
+.join-fbs__arrow path {
+  stroke: #00be40;
+  stroke-width: 4;
+  stroke-dasharray: 550; 
+  stroke-dashoffset: 550;
+}
+
+.join-fbs__arrow-tip {
+  position: absolute;
+  top: 106px;
+  left: 589px;
+  transform: rotate(-34deg);
+  opacity: 0;
+}
+
+.join-fbs__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  padding: 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #D9EEED;
+  border-radius: 8px;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #09544F;
+  z-index: 1;
+}
+
+.join-fbs__player::after,
+.join-fbs__tooltip::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #D9EEED;
+}
+
+.join-fbs__player-1::after, 
+.join-fbs__player-3::after {
+  bottom: -10px;
+  left: 42px;
+  clip-path: polygon(50% 50%, 100% 50%, 49% 85%, 0% 50%);
+}
+
+.join-fbs__player-2::after {
+  top: -10px;
+  left: 42px;
+  clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
+}
+
+.join-fbs__player img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
+}
+
+.join-fbs__player-1 {
+  top: 102px;
+  left: 124px;
+  opacity: 0;
+}
+
+.join-fbs__player-2 {
+  top: 53px;
+  left: 304px;
+  opacity: 0;
+}
+
+.join-fbs__player-3 {
+  top: 20px;
+  left: 567px;
+  opacity: 0;
+}
+
+.join-fbs__tooltip {
+  position: absolute;
+  top: 16px;
+  left: 256px;
+  padding: 8px 30px 8px 12px;
+  border-radius: 8px;
+  background: #D9EEED;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #09544F;
+  z-index: 1;
+  opacity: 0;
+}
+
+.join-fbs__tooltip::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: #00be40;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.join-fbs__tooltip::after {
+  right: -9px;
+  top: 8px;
+  height: 15px;
+  clip-path: polygon(50% 0%, 85% 50%, 50% 100%, 50% 50%);
+}
+
+.join-fbs__graph {
+  position: absolute;
+  width: 572px;
+  height: auto;
+  top: 9px;
+  left: 108px;
+  opacity: 0
+}
+
+.join-fbs__graph-line {
+  position: absolute;
+  width: 572px;
+  height: 242px;
+  top: -20px;
+  left: 108px; 
+  overflow: hidden;
+}
+
+.join-fbs__graph-line svg {
+  position: absolute;
+  bottom: -242px;
+}
+
+.join-fbs__graph-line svg:nth-of-type(1) {
+  left: -51px;
+}
+
+.join-fbs__graph-line svg:nth-of-type(2) {
+  left: 0
+}
+
+.join-fbs__graph-line svg:nth-of-type(3) {
+  left: 51px
+}
+
+.join-fbs__graph-line svg:nth-of-type(4) {
+  left: 102px
+}
+
+.join-fbs__graph-line svg:nth-of-type(5) {
+  left: 153px
+}
+
+.join-fbs__graph-line svg:nth-of-type(6) {
+  left: 204px
+}
+
+.join-fbs__graph-line svg:nth-of-type(7) {
+  left: 255px
+}
+
+.join-fbs__graph-line svg:nth-of-type(8) {
+  left: 306px
+}
+
+.join-fbs__graph-line svg:nth-of-type(9) {
+  left: 357px
+}
+
+.join-fbs__graph-line svg:nth-of-type(10) {
+  left: 408px
+}
+
+.join-fbs__graph-line svg:nth-of-type(11) {
+  left: 459px
+}
+
+@keyframes active-arrow {
+  100% {
+      stroke-dashoffset: 0;
+  }
+  }
+
+  @keyframes active-line {
+  100% {
+      bottom: 0px;
+  }
+}
+
+@media (max-width: 1247px) {
+
+  .join-fbs {
+    padding-top: 75px;
+  }
+
+  .join-fbs__decor-2 {
+    width: 174px;
+    height: 83px;
+  }
+
+  .join-fbs__decor-1 {
+    width: 359px;
+    height: 38px;
+  }
+
+  .join-fbs__heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .join-fbs__main {
+    max-width: 464px;
+    margin-bottom: 40px;
+  }
+
+  .join-fbs__container {
+    padding: 0px 16px 0px 32px;
+  }
+
+  .join-fbs__content {
+    padding-left: 0;
+  }
+
+  .join-fbs__motivation {
+    margin-bottom: 24px;
+  }
+
+  .join-fbs__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .join-fbs__pic {
+    bottom: -7px;
+  }
+
+  .join-fbs__field {
+    width: 605px;
+    height: 332px;
+  }
+
+  .join-fbs__dots {
+    width: 470px;
+    height: 208px;
+    top: 44px;
+    left: 58px;
+  }
+
+  .join-fbs__arrow {
+    width: 332px;
+    height: 134px;
+    top: 57px;
+    left: 133px;
+  }
+
+  .join-fbs__arrow-tip {
+    width: 18px;
+    height: 30px;
+    top: 113px;
+    left: 450px;
+  }
+
+  .join-fbs__player img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
+  }
+
+  .join-fbs__player {
+    width: 62px;
+    height: 50px;
+  }
+
+  .join-fbs__player-1::after,
+  .join-fbs__player-2::after,
+  .join-fbs__player-3::after {
+    left: 23px;
+  }
+
+  .join-fbs__player-1 {
+    top: 118px;
+    left: 94px;
+  }
+
+  .join-fbs__player-2 {
+    top: 76px;
+    left: 237px;
+  }
+
+  .join-fbs__player-3 {
+    top: 51px;
+    left: 446px;
+  }
+
+  .join-fbs__tooltip {
+    top: 41px;
+    left: 171px;
+  }
+
+  .join-fbs__graph {
+    top: 36px;
+    left: 74px;
+    width: 460px;
+    height: 300px;
+  }
+
+  .join-fbs__graph-line {
+    position: absolute;
+    width: 460px;
+    height: 300px;
+    top: -40px;
+    left:55px; 
+    overflow: hidden;
+  }
+
+  .join-fbs__graph-line svg:nth-of-type(1) {
+    left: -42px;
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(2) {
+    left: 0;
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(3) {
+    left: 42px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(4) {
+    left: 84px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(5) {
+    left: 126px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(6) {
+    left: 168px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(7) {
+    left: 210px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(8) {
+    left: 252px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(9) {
+    left: 294px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(10) {
+    left: 336px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(11) {
+    left: 378px
+  }
+}
+
+@media (max-width: 767px) {
+
+  .join-fbs__decor-1,
+  .join-fbs__decor-2 {
+    display: none;
+  }
+
+  .join-fbs__container {
+    padding: 0;
+  }
+
+  .join-fbs__inner {
+    border-radius: 0px;
+  }
+
+  .join-fbs__content {
+    padding: 40px 16px;
+  }
+  
+  .join-fbs__heading,
+  .join-fbs__motivation {
+    text-align: left;
+  }
+
+  .join-fbs__btn {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .join-fbs__pic {
+    flex-basis: 170px;
+    bottom: 0;
+  }
+
+  .join-fbs__field {
+    width: 288px;
+    height: 172px;
+  }
+
+  .join-fbs__dots {
+    width: 234px;
+    height: 110px;
+    top: 21px;
+    left: 26px;
+  }
+
+  .join-fbs__arrow {
+    width: 165px;
+    height: 65px;
+    top: 32px;
+    left: 64px;
+  }
+
+  .join-fbs__arrow-tip {
+    width: 10px;
+    height: 20px;
+    top: 58px;
+    left: 220px;
+  }
+
+  .join-fbs__tooltip {
+    top: 15px;
+    left: 35px;
+  }
+
+  .join-fbs__player-1 {
+    top: 30px;
+    left: 25px;
+  }
+
+  .join-fbs__player-2 {
+    top: 46px;
+    left: 97px;
+  }
+
+  .join-fbs__player-3 {
+    top: -3px;
+    left: 201px;
+  }
+
+  .join-fbs__player {
+    width: 66px;
+    height: 52px;
+  }
+
+  .join-fbs__main {
+    margin-bottom: 14px;
+  }
+
+  .join-fbs__graph {
+    width: 288px;
+    height: 188px;
+    top: 0;
+    left: 0;
+  }
+
+  .join-fbs__graph-line {
+    width: 288px;
+    height: 152px;
+    top: -12px;
+    left: 0;
+  }
+
+  .join-fbs__graph-line svg:nth-of-type(1) {
+    left: -68px;
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(2) {
+    left: -42px;
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(3) {
+    left: -16px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(4) {
+    left: 10px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(5) {
+    left: 36px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(6) {
+    left: 62px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(7) {
+    left: 88px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(8) {
+    left: 114px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(9) {
+    left: 140px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(10) {
+    left: 166px
+  }
+  
+  .join-fbs__graph-line svg:nth-of-type(11) {
+    left: 192px
+  }
+}
+
+/*=================== END section join-fbs ====================*/
+
+/*=================== START section leicester-lead ====================*/
+
+ .leicester-lead__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 152px;
+  margin-top: 122px;
+ }
+
+.leicester-lead__pic {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  padding-top: 40px;
+  margin-left: 4px;
+}
+
+ .leicester-lead__text {
+  width: 700px;
+  padding-top: 35px;
+  padding-left: 89px;
+  background-image: url(../img/leicester-lead/quotes.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.leicester-lead__text h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  color: #09544F;
+}
+
+.leicester-lead__description {
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+  color: #09544F;
+}
+
+.leicester-lead__signature {
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  color: #6F6F71;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.leicester-lead__name {
+  font-weight: 500;
+  color: #09544F;
+}
+
+@media (max-width: 1248px) {
+  .leicester-lead {
+    padding: 0 32px;
+  }
+
+  .leicester-lead__pic {
+    width: 100%;   
+  }
+
+  .leicester-lead__text {
+    padding-left: 15px;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .leicester-lead__text h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .leicester-lead__content {
+    align-items: center;
+    margin-top: 93px;
+  } 
+}
+
+@media (max-width: 1024px) { 
+  .leicester-lead__content {
+    align-items: flex-start;
+  }
+  
+  .leicester-lead__text {
+    padding-top: 40px;    
+    margin-top: -4px;
+    padding-left: 30px;
+    margin-left: -15px;
+    margin-bottom: 20px;
+  }
+
+  .leicester-lead__content {
+    margin-bottom: 43px;
+  }
+
+  .leicester-lead__pic {
+    width: 100%;
+    max-width: 284px;
+  }
+}
+
+@media (max-width: 767px) {  
+  .leicester-lead {
+    display: none;
+  }
+}
+
+/*=================== END section leicester-lead ====================*/
+
+/*=================== START section leicester-slogan ====================*/
+
+.leicester-slogan {
+  background: #D9EEED;
+  padding: 80px 0px 0px;
+}
+
+.leicester-slogan__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 0 0px;
+}
+
+.leicester-slogan__figure {
+  width: 376px;
+  text-align: center;
+}
+
+.leicester-slogan___num {
+  font-family: 'Adieu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #09544F;
+  margin-bottom: 16px;
+}
+
+.leicester-slogan___caption {
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #09544F;
+}
+
+.leicester-slogan__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.leicester-slogan__title h2 {
+  font-family: 'Adieu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  color: #09544F;
+  margin-bottom: 64px;
+}
+
+.leicester-slogan__btn {
+  display: inline-block;
+  width: 392px;
+  padding: 12px;
+  background: #F34300;
+  border-radius: 12px;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.leicester-slogan__content {
+  max-width: 1330px;
+  margin: auto;
+  background: url(../img/leicester-slogan/tickets.png) no-repeat, url(../img/leicester-slogan/t-shirtandball.png) no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: 370px, 320px;
+  padding: 0 0 160px;
+}
+
+@media (max-width: 1248px) {
+  .leicester-slogan___num {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 4px;
+  }
+
+  .leicester-slogan___caption {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .leicester-slogan {
+    padding: 64px 0px 0px;
+    background: #D9EEED;
+  }
+
+  .leicester-slogan__title h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
+
+  .leicester-slogan__info {
+    padding: 0px 26px;
+    margin-bottom: 64px;
+  }
+
+  .leicester-slogan__content {
+    background: url(../img/leicester-slogan/tickets.png) no-repeat, url(../img/leicester-slogan/t-shirtandball.png) no-repeat;
+    background-position: left 54px bottom, right 42px bottom;
+    background-size: 206px, 220px;
+    padding: 0 0 128px;
+  }
+
+  .leicester-slogan__btn {
+    width: auto;
+    padding: 12px 67px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .leicester-slogan {
+    padding: 39px 0 0;
+  }
+
+  .leicester-slogan__info {
+    display: none;
+  }
+
+  .leicester-slogan__title h2 {
+    margin-bottom: 32px;
+  }
+
+  .leicester-slogan__btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .leicester-slogan__content {
+    background: url(../img/leicester-slogan/img-mobile.png) no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    padding: 0 16px 0px;
+    padding-bottom: 68%;
+  }
+
+
+}
+/*=================== END section leicester-slogan ====================*/
+
+
+
+/*=================== START section footer ====================*/
+
+.footer {
+  background: #09544F;
+  font-family: 'Inter', 'Roboto Condensed', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.footer-container {
+  padding: 0px 8px;
+}
+
+.footer p {
+  font-weight: 400;
+}
+
+.footer span {
+  font-weight: 500;
+}
+
+.footer__content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #447D79;
+}
+
+.footer__section {
+  padding: 23px 0px 0px;
+}
+
+.footer__logo {
+  padding-top: 38px;
+}
+
+.footer__logo img {
+  width: 324px;
+  height: 60px;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item a:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer__item span {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer__risk span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer__icons a {
+  display: inline-block;
+}
+
+.footer__info-section {
+  margin: 0px 0px 16px;
+  display: flex;
+}
+
+.footer__info-section:nth-child(2) p,
+.footer__info-section:nth-child(3) p{
+  margin-top: 3px;
+}
+.footer__icon:hover {
+  opacity: 0.8;
+}
+.footer__icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__info-section svg {
+  flex-shrink: 0;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__risk {
+  display: block;
+  padding: 9px 8px;
+  margin: 23px 0px 3px;
+  background: #094844;
+  border-radius: 8px;
+}
+
+.footer__copyright p {
+  margin-top: 1px;
+}
+
+@media (max-width: 1247px) {
+
+  .footer-container {
+    padding: 0px 32px;
+  }
+
+  .footer__logo {
+    padding-top: 34px;
+  }
+
+  .footer__content {
+    padding-bottom: 19px;
+  }
+
+  .footer__info-section:nth-child(2) p,
+  .footer__info-section:nth-child(3) p{
+  margin-top: 0px;
+  }
+
+  .footer__info-section {
+    margin: 0px 0px 17px;
+  }
+
+  .footer__risk {
+    margin: 22px 0px 3px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .footer-container {
+    padding: 0px 16px;
+  }
+
+  .footer__logo {
+    padding-top: 24px;
+  }
+
+  .footer__logo img {
+    width: 216px;
+    height: 40px;
+  }
+
+  .contacts-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__item:first-child {
+    margin-bottom: 19px;
+  }
+
+  .footer__info-section p {
+    max-width: 88%;
+  }
+
+}
+
+/*=================== END section footer ====================*/
